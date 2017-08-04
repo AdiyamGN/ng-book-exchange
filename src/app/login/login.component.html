@@ -1,0 +1,38 @@
+<div class="container login">
+  <form #loginForm class="form-horizontal">
+    <fieldset class="col-lg-6 col-lg-offset-3">
+      <h4 class="text-center">Sign In</h4>
+      <div class="form-group">
+        <div>
+          <input type="email" 
+            class="form-control" 
+            placeholder="Email" 
+            name="email"
+            #emailControl="ngModel" 
+            [(ngModel)]="email" 
+            email required>
+        </div>
+      </div>
+      <div class="form-group">
+        <div>
+          <input type="password" 
+            class="form-control" 
+            placeholder="Password" 
+            #passwordControl="ngModel" 
+            [(ngModel)]="password"
+            name="password"
+            required>
+        </div>
+      </div>
+      <div class="form-group">
+        <div>
+          <button [disabled]="!loginForm.form.valid" 
+            type="submit" 
+            class="btn btn-primary"
+            (click)="signIn()">Sign In</button>
+            <p *ngIf="msg" class="text-danger">{{ msg }}</p>
+        </div>
+      </div>
+    </fieldset>
+  </form>
+  </div>

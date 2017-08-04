@@ -1,0 +1,73 @@
+@import '../../styles';
+
+// ------------------------ Books Section Styles --------------------- //
+
+.books-wrapper {
+	background: $white;
+	margin: 0 auto;
+  text-align: center;
+	margin-bottom: 5em;
+	margin-top: 5em;
+	.books-header {
+		font-size: 2em !important;
+		color: $darker;
+		font-weight: 700 !important;
+		line-height: 1.6em;
+	}
+	.books-subheader {
+		color: $darker;
+		font-size: 1.5em;
+		font-weight: 400;
+		text-align: center;
+		line-height: 1.25;
+		letter-spacing: 0.03em;
+		padding-bottom: 1.5em;
+
+	}
+	.books {
+		margin-bottom: 3em;
+		img {
+			width: 70%;
+			margin: 1em;
+			overflow: hidden;
+			box-shadow: $darker 1px 1px 8px 1px;
+		}
+	}
+	.btn-success {
+		background-color: $secondary;
+		border-color: $secondary;
+		margin-right: 1rem;
+		display: inline-block;
+		transition: all .3s ease-in-out;
+		&:hover {
+			background-color: $primary;
+			border-color: $primary;
+			color: #FFFFFF;
+		}
+	}
+}
+
+@media only screen and (min-device-width: 275px) and (max-device-width: 667px) {
+  .books-wrapper {
+		padding-top:  0.5rem !important;
+		margin-bottom: 5em;
+		margin-left: 2rem;
+		.books-header {
+			font-size: 2.5rem !important;
+			line-height: 4rem;
+			text-align: center;
+		}
+		.books-subheader {
+			font-size: 1.8rem !important;
+			text-align: center;
+			line-height: 3rem;
+			padding-bottom: 2rem;
+			letter-spacing: 0.03em;
+		}
+		.books {
+			img {
+				width: 80%;
+			}
+		}
+	}
+}

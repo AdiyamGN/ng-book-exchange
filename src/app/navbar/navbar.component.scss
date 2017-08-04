@@ -1,0 +1,23 @@
+@import '../../styles';
+
+// ------------------------ Navigation Styles --------------------- //
+
+.nav-wrapper {
+  .navbar-default {
+    background: $white;
+    .navbar-brand {
+      color: #323241;
+      font-weight: 700;
+      font-size: 19px;
+      letter-spacing: 1.5px;
+    }
+    .navbar-nav {
+      li a {
+        color: $nav-link;
+        font-size: 1.3rem;
+        letter-spacing: 0.035em;
+        text-transform: capitalize;
+      }
+    }
+  } 
+}
